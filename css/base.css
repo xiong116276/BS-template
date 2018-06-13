@@ -1,0 +1,41 @@
+/*
+Error: Invalid CSS after "$color-0": expected ":", was "{color: #3366ff;}"
+        on line 30 of base.scss
+
+25: .clearfix:before,
+26: .clearfix:after { display: table;  line-height: 0; content: ""; }
+27: .clearfix:after { clear: both; }
+28: 
+29: //colors
+30: $color-0{color: #3366ff;}
+31: $color-1{color: #5680ff;}
+32: $color-2{color: #02bdf3;}
+33: $color-3{color: #0bb66f;}
+34: $color-4{color: #01bbb0;}
+35: $color-5{color: #edad02;}
+
+Backtrace:
+base.scss:30
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:628:in `variable'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:677:in `block_contents'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.25/bin/scss:13:in `<top (required)>'
+C:/Ruby23/bin/scss:22:in `load'
+C:/Ruby23/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$color-0\": expected \":\", was \"{color: #3366ff;}\"\A         on line 30 of base.scss\A \A 25: .clearfix:before,\A 26: .clearfix:after { display: table;  line-height: 0; content: \"\"; }\A 27: .clearfix:after { clear: both; }\A 28: \A 29: //colors\A 30: $color-0{color: #3366ff;}\A 31: $color-1{color: #5680ff;}\A 32: $color-2{color: #02bdf3;}\A 33: $color-3{color: #0bb66f;}\A 34: $color-4{color: #01bbb0;}\A 35: $color-5{color: #edad02;}"; }

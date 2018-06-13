@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="css/xmn-all.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<!--弹框-->
+<div class="show-page">
+	<div class="container">
+		<div class="row">
+			<a class="btn btn-default"  onclick="parent.xmn.tips('默认状态')">tips default</a>
+			<a class="btn btn-color-3"  onclick="parent.xmn.tips('删除成功！','success',300)">tips success</a>
+			<a class="btn btn-color-10" onclick="parent.xmn.tips('删除出错！','error')">tips error</a>
+			<a class="btn btn-color-10" onclick="parent.xmn.tips().error('删除出错')">tips error</a>
+			<a class="btn btn-color-6"  onclick="parent.xmn.tips('请选择删除记录！','warning')">tips warning</a>
+			<a class="btn btn-default"  onclick="parent.xmn.tips('数据请求中...！','loading')">tips loading</a>
+		</div>
+		<div class="row">
+			<a class="btn btn-default"  onclick="parent.xmn.dialog.alert('您已经永久删除了这条信息。。。',function() {console.log('default');})">dialog alert default</a>
+			<a class="btn btn-color-3"  onclick="parent.xmn.dialog.alert('您已经永久删除了这条信息。。。','success',function() {console.log('success')})">dialog alert success</a>
+			<a class="btn btn-color-10" onclick="parent.xmn.dialog.alert('您已经永久删除了这条信息。','error',function() {console.log('error')})">dialog alert error</a>
+			<a class="btn btn-color-6"  onclick="parent.xmn.dialog.alert('您已经永久删除了这条信息。。。','warning',function() {console.log('warning')})">dialog alert warning</a>
+			<a class="btn btn-color-2"  onclick="parent.xmn.dialog.alert('您已经永久删除了这条信息。。。','information',function() {console.log('information')})">dialog alert information</a>
+
+			<a class="btn btn-default"  onclick="parent.xmn.dialog.confirm(
+			  '息修改备注信息修改备注信息修改备注信息修改备注信息修改备注信息修改备注信息修改备注信息修改备注信息修改备注信息' +
+			   '修改备注信息修改备注信息修改备注信息',function() {alert('点击确定按钮')},function() {alert('点击取消按钮')})">dialog confirm</a>
+			<a class="btn btn-default"  onclick="parent.xmn.dialog.confirm('<textarea></textarea>',function() {alert('点击确定按钮')},function() {alert('点击取消按钮')})">dialog confirm</a>
+
+			<a class="btn btn-color-2"  onclick="parent.xmn.dialog.prompt('订单金额',function() {alert('订单金额为: '+$(this).parents('.modal-container').find('.prompt-input').val())},function() {alert('点击取消按钮')})">dialog prompt</a>
+
+			<a class="btn btn-color-0" onclick="parent.xmn.modal({'title':'百度一下','url':'http://www.baidu.com/',maxBtn:false})">百度</a>
+			<a class="btn btn-default" onclick="parent.xmn.browser()">文件管理</a>
+		</div>
+
+	</div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/xmn-all.js"></script>
+<script>
+
+</script>
+</body>
+</html>

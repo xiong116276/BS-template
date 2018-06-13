@@ -1,0 +1,51 @@
+@charset "utf-8";
+//btn样式
+@mixin btn-type($color,$bg,$border){
+  color: $color;
+  background-color: $bg;
+  border-color: $border;
+  &:hover {
+    color: $color;
+    background-color: darken($bg, 10%);
+    border-color: darken($border, 12%);
+  }
+}
+//文字截断到第几行
+@mixin text-overflow($line){
+  @if $line==1{
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }@else{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    white-space: normal;
+    -webkit-line-clamp: $line;
+    text-overflow: ellipsis;
+  }
+}
+//进度条 progress
+@mixin progress-bar-striped($color){
+  background-image: -webkit-linear-gradient(-45deg,lighten($color,10%) 25%,transparent 25%,transparent 50%,lighten($color,10%) 50%,lighten($color,10%) 75%,transparent 75%,transparent);
+  background-image: -o-linear-gradient(-45deg,lighten($color,10%) 25%,transparent 25%,transparent 50%,lighten($color,10%) 50%,lighten($color,10%) 75%,transparent 75%,transparent);
+  background-image: linear-gradient(-45deg,lighten($color,10%) 25%,transparent 25%,transparent 50%,lighten($color,10%) 50%,lighten($color,10%) 75%,transparent 75%,transparent);
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+}
+@mixin clear(){
+  *zoom: 1;
+  &:before,&:after { display: table;  line-height: 0; content: ""; }
+  &:after { clear: both; }
+}
+@mixin notice($color,$color-border,$color-bg){
+  color: $color;
+  border-color: $color-border;
+  background-color: $color-bg;
+}
+
+
+
+
+

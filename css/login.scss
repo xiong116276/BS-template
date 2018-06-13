@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+.login-container{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/login-bg.png") no-repeat center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.login-content{
+  margin: auto;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  right: 0;
+  width: 410px;
+  min-height: 100px;
+  background-color: #fff;
+  border: 10px solid #3f4351;
+  border-radius: 15px;
+  padding-bottom: 45px;
+  .input-group{
+    position: relative;
+    margin: 30px auto 0;
+    width: 333px;
+    height: 48px;
+    line-height: 50px;
+    label.icon{
+      position: absolute;
+      font-size: 30px;
+      left: 10px;
+      &.icon-mima2{
+        font-size: 45px;
+        left: 3px;
+      }
+    }
+    input{
+      float: left;
+      border: 1px solid #d6d6d6;
+      border-radius: 5px;
+      height: 100%;
+      width: 100%;
+      padding-left: 15%;
+      outline: none;
+      font-size: 22px;
+    }
+    &.code{
+      border: 0;
+      input{
+        width: 170px;
+        padding-left: 10px;
+      }
+      .btn-code{
+        float: right;
+        width: 148px;
+        height: 48px;
+        border: 1px solid #d6d6d6;
+        border-radius: 5px;
+      }
+      .code-show{
+        float: left;
+        color: #e38f02;
+        font-size: 25px;
+        margin: 9px 0 0 10px;
+        letter-spacing: 3px;
+        img{
+          width: 80px;
+          height: 28px;
+          vertical-align: top;
+        }
+      }
+      .icon-shuaxin{
+        width: 40px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        float: right;
+        font-size: 25px;
+        margin: 9px 0;
+        border-left: 1px solid #d6d6d6;
+        cursor: pointer;
+      }
+    }
+    &.remember{
+      height: auto;
+      line-height: 18px;
+      input[type=checkbox]{
+        width: 18px;
+        height: 18px;
+        margin: 0 5px 0 0;
+        padding: 0;
+        -webkit-appearance:none;
+        background-color: #fff;
+        &:checked{
+          background: url("../images/icon-rememer.png") no-repeat center;
+          -webkit-background-size: contain;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .btn-login{
+    display: block;
+    margin: 40px auto 0;
+    width: 333px;
+    height: 48px;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    font-size: 20px;
+  }
+}
+.login-bg-line{
+  position: absolute;
+  top: -192px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 57px;
+  height: 233px;
+  background: url(../images/login-2.png) no-repeat center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.login-title{
+  text-align: center;
+  margin-top: 55px;
+  font-size: 30px;
+}
+.login-warning{
+  position: absolute;
+  top: -25px;
+  left: 0;
+  line-height: 20px;
+  font-size: 15px;
+}
+.record-number{
+  text-align: center;
+  color: #b7b8be;
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+}
+
+
+

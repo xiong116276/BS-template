@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>文本编辑器</title>
+	<link rel="stylesheet" href="css/xmn-all.css">
+</head>
+<body>
+	<div class="container">
+		<form action="">
+			<textarea id="editor_id" name="content" style="width:700px;height:300px;"></textarea>
+			<a class="btn btn-default">submit</a>
+		</form>
+	</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="kindeditor/kindeditor-all.js"></script>
+<script src="kindeditor/lang/zh-CN.js"></script>
+<script src="js/xmn-all.js"></script>
+<script>
+
+  xmn.kindEditor(function(K) {
+    var options = {
+      width : '100%',
+      height: '200px'
+    };
+    var editor = K.create('#editor_id', options);
+
+    // 设置HTML内容
+    // editor.html('HTML内容');
+    // 取得HTML内容
+		$(".btn").click(function () {
+      var html = editor.html();;
+			alert(html);
+    })
+  });
+
+
+</script>
+</body>
+</html>

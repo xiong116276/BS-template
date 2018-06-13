@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<link rel="stylesheet" href="css/xmn-all.css">
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<!--进度条-->
+<div class="show-page">
+	<div class="container">
+		<h3>水平进度条</h3>
+		<div class="row">
+			<h3>默认进度条color-bg-0</h3>
+			<div class="progress">
+				<div class="progress-bar" style="width: 60%;"></div>
+			</div>
+		</div>
+		<div class="row">
+			<h3>color-bg-4</h3>
+			<div class="progress">
+				<div class="progress-bar color-bg-4" style="width: 60%;"></div>
+			</div>
+		</div>
+		<div class="row">
+			<h3>带条纹进度条</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" style="width: 60%;"></div>
+			</div>
+		</div>
+		<div class="row">
+			<h3>动画效果进度条</h3>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped active" style="width: 60%;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3>圆形进度条</h3>
+		<div class="row">
+			<div class="col-2">
+				<p>svg</p>
+				<div class="progress-round-svg">
+					<xmn-progress x-type="svg" x-radius="100" x-value="50" x-color="#000"></xmn-progress>
+				</div>
+			</div>
+			<div class="col-2">
+				<p>canvas</p>
+				<div class="progress-round-canvas">
+					<xmn-progress x-type="canvas" x-radius="100" x-value="50" x-color="#3366ff"></xmn-progress>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-3.1.1.js"></script>
+<script src="js/xmn-all.js"></script>
+<script>
+	xmn.progress();
+</script>
+</body>
+</html>
